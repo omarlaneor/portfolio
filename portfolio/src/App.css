@@ -14,11 +14,12 @@
 }
 
 .app {
-  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 header {
-  background-color: #333;
+  background-color: transparent;
   color: white;
   padding: 20px;
 }
@@ -31,13 +32,18 @@ header {
 .navbar {
   display: flex;
   justify-content: space-between;
-  background-color: #333;
+  background-color: transparent;
   padding: 10px;
   color: white;
 }
 
 .navbar-left h2 {
   margin: 0;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
 }
 
 .navbar-right a {
@@ -48,16 +54,55 @@ header {
   width: 26px;
 }
 
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.header-content aside {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.header-content h1,
+.header-content p {
+  margin: 0;
+}
+
+.header-content p {
+  margin-top: 10px;
+}
+
+.header-content img {
+  max-width: 100%;
+  height: auto;
+}
+
 .portfolio {
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: space-between;
+  flex-direction: row;
   padding: 20px;
 }
 
-.portfolio img {
+.portfolio p {
+  margin: 0;
+}
+
+.portfolio-content {
+  max-width: 60%;
+}
+
+.portfolio-image {
   max-width: 30%;
+  margin-left: 20px;
+}
+
+.portfolio img {
+  max-width: 100%;
   height: auto;
-  margin-right: 20px;
 }
